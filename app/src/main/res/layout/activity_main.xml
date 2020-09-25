@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60pt"
+        android:textSize="22sp"
         android:text="X" />
     <Button
         android:layout_width="wrap_content"
@@ -20,26 +21,8 @@
         android:text="increase Count"
         android:id="@+id/increase"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:layout_alignBottom="@+id/videre"/>
-
-    <Button
-        android:id="@+id/videre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="80dp"
-        android:text="videre"/>
-
-
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox" />
-
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
 
