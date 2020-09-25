@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KotlinFælles</string>
+    <string name="Companies">TextView</string>
+    <string name="companies_that_use_kotlin">Companies that use Kotlin</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
 </resources>

@@ -41,4 +41,5 @@ class MainActivity : AppCompatActivity() {
             else -> "mon jeg virker" }
         return svar
     }
+
 }
