@@ -13,6 +13,7 @@ class HelloWorld : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello_world)
         val layout: RelativeLayout = findViewById(R.id.helloWorld);
+
         val videre: Button = findViewById(R.id.videre_til_simple_calc)
 
         videre.setOnClickListener {
