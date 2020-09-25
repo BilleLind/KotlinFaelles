@@ -1,9 +1,10 @@
 package com.example.kotlinflles
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_simple_calc.*
-import net.objecthunter.exp4j.Expression
 import net.objecthunter.exp4j.ExpressionBuilder
 
 
@@ -96,6 +97,11 @@ class SimpleCalc : AppCompatActivity() {
             }
 
             tvResult.text = ""
+        }
+        val tilbage: Button = findViewById(R.id.tilbage_til_hello_world)
+
+        tilbage.setOnClickListener{
+            startActivity(Intent(this, HelloWorld::class.java))
         }
 
     }
