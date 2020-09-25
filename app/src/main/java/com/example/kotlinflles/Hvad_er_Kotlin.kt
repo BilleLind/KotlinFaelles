@@ -15,5 +15,6 @@ class Hvad_er_Kotlin : AppCompatActivity() {
         next.setOnClickListener {
             startActivity(Intent(this, HvadErKotlin2::class.java))
 
+        }
     }
 }

@@ -42,6 +42,6 @@
         android:text="Sproget er udviklet af jetBrains og blev første gang udgivet i 2011 til mainstreamen. Hvilken platforme kan sproget bruges til. "
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="401dp"
-        android:textColor="#000000"
+        android:textColor="#000000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
