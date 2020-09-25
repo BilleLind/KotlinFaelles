@@ -32,6 +32,7 @@ class ProsAndCons : AppCompatActivity() {
             3 -> Toast.makeText(this, "- understøttet af mange IDE's så man kan arbejde i den man foretrækker", LENGTH_LONG).show();
             4 -> Toast.makeText(this, "- meget klar og instinktiv syntaks, så nemt at skrive i:", LENGTH_LONG).show();
             5 -> Toast.makeText(this, "- godt til JVM development: desktop, web and backend server application", LENGTH_LONG).show();
+            6 -> Toast.makeText(this, "- godt til JVM development: desktop, web and backend server application", LENGTH_LONG).show();
 
             else -> {
                 "test"
