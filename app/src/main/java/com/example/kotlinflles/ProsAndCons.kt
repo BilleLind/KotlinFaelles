@@ -1,18 +1,29 @@
 package com.example.kotlinflles
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import androidx.appcompat.app.AppCompatActivity
 
 
 class ProsAndCons : AppCompatActivity() {
+    var x= 0;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pros_and_cons)
+
+        val next: Button = findViewById(R.id.Next_button)
+
+
+        next.setOnClickListener {
+            x +=1;
+            changeText()
+        }
+
     }
 
-    fun changeText():  {
+    private fun changeText()  {
 
         when(x){
 
@@ -28,6 +39,5 @@ class ProsAndCons : AppCompatActivity() {
 
 
     }
-    static void
 
 }

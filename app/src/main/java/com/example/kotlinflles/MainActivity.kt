@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val increase = findViewById<Button>(R.id.increase)
         val count: TextView = findViewById(R.id.count)
-        val videre: Button = findViewById(R.id.videre)
+
         val layout:RelativeLayout = findViewById(R.id.mainLayout);
         increase.setOnClickListener {
             change()
@@ -26,13 +26,15 @@ class MainActivity : AppCompatActivity() {
             count.setText(temp)
             Toast.makeText(applicationContext, hentSvar(), Toast.LENGTH_SHORT).show()
         }
-        videre.setOnClickListener {
-            startActivity(Intent(this, HelloWorld::class.java))
-        }
 
         layout.setOnTouchListener(object: OnSwipeTouchListener(this@MainActivity) {
             override fun  onSwipeLeft(){
             toRight()
+            }
+        })
+        layout.setOnTouchListener(object: OnSwipeTouchListener(this@MainActivity) {
+            override fun  onSwipeRight(){
+                toLeft()
             }
         })
 
@@ -41,6 +43,10 @@ class MainActivity : AppCompatActivity() {
     fun toRight() {
         startActivity(Intent(this, HelloWorld::class.java))
     }
+    fun toLeft() {
+        startActivity(Intent(this, MainActivity::class.java))
+    }
+
 
     fun change() {
         county += 1
