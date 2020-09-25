@@ -35,7 +35,7 @@ class ProsAndCons : AppCompatActivity() {
             6 -> Toast.makeText(this, "- 20% færre fejl end at bruge java, og man slipper for en masse kildekode", LENGTH_LONG).show();
 
             else -> {
-                "Okay, måske ikke så mange Pro's...."
+                Toast.makeText(this, "Okay, måske ikke så mange Pro's....", LENGTH_LONG).show();
             }
 
         }
