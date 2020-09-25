@@ -12,8 +12,6 @@ class HelloWorld : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello_world)
-        val layout: RelativeLayout = findViewById(R.id.helloWorld);
-
         val videre: Button = findViewById(R.id.videreHello)
 
         videre.setOnClickListener {
@@ -21,14 +19,6 @@ class HelloWorld : AppCompatActivity() {
         }
 
 
-        layout.setOnTouchListener(object: OnSwipeTouchListener(this@HelloWorld) {
-            override fun  onSwipeLeft(){
-                toRight()
-            }
-        })
-    }
 
-    fun toRight() {
-        startActivity(Intent(this, SimpleCalc::class.java))
     }
 }

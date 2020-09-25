@@ -31,25 +31,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, HelloWorld::class.java))
         }
 
-        layout.setOnTouchListener(object: OnSwipeTouchListener(this@MainActivity) {
-            override fun  onSwipeLeft(){
-            toRight()
-            }
-        })
-        layout.setOnTouchListener(object: OnSwipeTouchListener(this@MainActivity) {
-            override fun  onSwipeRight(){
-                toLeft()
-            }
-        })
+
 
     }
 
-    fun toRight() {
-        startActivity(Intent(this, HelloWorld::class.java))
-    }
-    fun toLeft() {
-        startActivity(Intent(this, MainActivity::class.java))
-    }
+
 
 
     fun change() {
