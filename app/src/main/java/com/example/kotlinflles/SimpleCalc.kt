@@ -22,6 +22,10 @@ class SimpleCalc : AppCompatActivity() {
             evaluateExpression("2", clear = true)
         }
 
+        tvThree.setOnClickListener {
+            evaluateExpression("3", clear = true)
+        }
+
         tvFour.setOnClickListener{
             evaluateExpression("4", clear = true)
         }
@@ -106,7 +110,7 @@ class SimpleCalc : AppCompatActivity() {
 
     }
 
-    fun evaluateExpression(string: String, clear: Boolean) {
+    private fun evaluateExpression(string: String, clear: Boolean) {
         if(clear) {
             tvResult.text = ""
             tvExpression.append(string)

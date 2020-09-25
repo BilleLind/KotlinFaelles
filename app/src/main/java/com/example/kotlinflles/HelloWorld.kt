@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kotlinflles.HvadErKotlin as HvadErKotlin1
 
 class HelloWorld : AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
@@ -15,7 +16,7 @@ class HelloWorld : AppCompatActivity() {
         val videre: Button = findViewById(R.id.videreHello)
 
         videre.setOnClickListener {
-            startActivity(Intent(this, HvadErKotlin::class.java))
+            startActivity(Intent(this, HvadErKotlin1::class.java))
         }
 
 
