@@ -1,6 +1,8 @@
 package com.example.kotlinflles
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class HelloWorld : AppCompatActivity() {
@@ -8,9 +10,11 @@ class HelloWorld : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello_world)
 
+        val videre: Button = findViewById(R.id.videre_til_simple_calc)
 
-
-
+        videre.setOnClickListener {
+            startActivity(Intent(this, SimpleCalc::class.java))
+        }
 
     }
 }

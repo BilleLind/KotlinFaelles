@@ -1,5 +1,6 @@
 package com.example.kotlinflles
 
+import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,6 +12,7 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     var county=1
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,8 +30,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, HelloWorld::class.java))
         }
 
+        layout.setOnTouchListener(object: OnSwipeTouchListener(this@MainActivity) {
+            override fun  onSwipeLeft(){
+            toRight()
+            }
+        })
 
     }
+
+    fun toRight() {
+        startActivity(Intent(this, HelloWorld::class.java))
+    }
+
     fun change() {
         county += 1
     }
