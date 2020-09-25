@@ -16,13 +16,12 @@
         />
 
     <Button
-        android:id="@+id/videre_til_simple_calc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/image"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="323dp"
-        android:layout_marginBottom="510dp"
-        android:text="Videre" />
+        android:text="videre"
+        android:id="@+id/videreHello"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
 
 </RelativeLayout>

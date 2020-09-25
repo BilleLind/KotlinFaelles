@@ -18,13 +18,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val increase = findViewById<Button>(R.id.increase)
         val count: TextView = findViewById(R.id.count)
-
+        val videre: Button = findViewById(R.id.videreMain)
         val layout:RelativeLayout = findViewById(R.id.mainLayout);
         increase.setOnClickListener {
             change()
             val temp:String = county.toString()
             count.setText(temp)
             Toast.makeText(applicationContext, hentSvar(), Toast.LENGTH_SHORT).show()
+        }
+
+        videre.setOnClickListener {
+            startActivity(Intent(this, HelloWorld::class.java))
         }
 
         layout.setOnTouchListener(object: OnSwipeTouchListener(this@MainActivity) {

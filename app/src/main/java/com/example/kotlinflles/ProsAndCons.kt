@@ -1,5 +1,6 @@
 package com.example.kotlinflles
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -12,9 +13,12 @@ class ProsAndCons : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pros_and_cons)
-
+        val videre: Button = findViewById(R.id.viderePros)
         val next: Button = findViewById(R.id.Next_button)
 
+        videre.setOnClickListener {
+            startActivity(Intent(this, SimpleCalc::class.java))
+        }
 
         next.setOnClickListener {
             x +=1;

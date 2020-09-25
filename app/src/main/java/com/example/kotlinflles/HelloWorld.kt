@@ -14,10 +14,10 @@ class HelloWorld : AppCompatActivity() {
         setContentView(R.layout.activity_hello_world)
         val layout: RelativeLayout = findViewById(R.id.helloWorld);
 
-        val videre: Button = findViewById(R.id.videre_til_simple_calc)
+        val videre: Button = findViewById(R.id.videreHello)
 
         videre.setOnClickListener {
-            startActivity(Intent(this, HvadErKotlin2::class.java))
+            startActivity(Intent(this, HvadErKotlin::class.java))
         }
 
 
