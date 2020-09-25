@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HvadErKotlin2">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="632dp" />
+
+    <TextView
+        android:id="@+id/hvemBruger"
+        android:layout_width="368dp"
+        android:layout_height="29dp"
+        android:autoSizeTextType="uniform"
+        android:text="Hvilken platform kan bruge Kotlin ?"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="158dp"
+        android:layout_height="172dp"
+        app:srcCompat="@drawable/win1"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="183dp"
+        android:layout_height="173dp"
+        app:srcCompat="@drawable/android"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="168dp"
+        android:layout_height="199dp"
+        app:srcCompat="@drawable/linux"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="172dp"
+        android:layout_height="199dp"
+        app:srcCompat="@drawable/ios"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="72dp"
+        android:layout_height="34dp"
+        android:text="Windows"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:text="Android"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="53dp"
+        android:layout_height="32dp"
+        android:text="Linux"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="44dp"
+        android:layout_height="32dp"
+        android:text="IOS"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="283dp"
+        tools:layout_editor_absoluteY="555dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

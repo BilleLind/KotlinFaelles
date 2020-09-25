@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hvad_er_Kotlin">
+
+    <Button
+        android:id="@+id/hvaderkotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="626dp" />
+
+
+    <TextView
+        android:id="@+id/hvadErKotlinTxt"
+        android:layout_width="359dp"
+        android:layout_height="257dp"
+        android:autoSizeTextType="uniform"
+        android:text="Kotlin er et cross platform general purpose programming language. Som på mange måder bygger vider på Java.
+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="342dp"
+        android:layout_height="571dp"
+        app:srcCompat="@drawable/kotlinlogo"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="-209dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="376dp"
+        android:layout_height="225dp"
+        android:autoSizeTextType="uniform"
+        android:text="Sproget er udviklet af jetBrains og blev første gang udgivet i 2011 til mainstreamen. Hvilken platforme kan sproget bruges til. "
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="401dp"
+        android:textColor="#000000"
+
+</androidx.constraintlayout.widget.ConstraintLayout>
