@@ -5,9 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     var county=1
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val increase = findViewById<Button>(R.id.increase)
         val count: TextView = findViewById(R.id.count)
         val videre: Button = findViewById(R.id.videre)
-
+        val layout:RelativeLayout = findViewById(R.id.mainLayout);
         increase.setOnClickListener {
             change()
             val temp:String = county.toString()
@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         videre.setOnClickListener {
             startActivity(Intent(this, HelloWorld::class.java))
         }
+
+
     }
     fun change() {
         county += 1
