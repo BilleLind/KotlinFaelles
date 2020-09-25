@@ -16,7 +16,7 @@ class HelloWorld : AppCompatActivity() {
         val videre: Button = findViewById(R.id.videre_til_simple_calc)
 
         videre.setOnClickListener {
-            startActivity(Intent(this, SimpleCalc::class.java))
+            startActivity(Intent(this, HvadErKotlin2::class.java))
         }
 
 
