@@ -30,6 +30,8 @@ class ProsAndCons : AppCompatActivity() {
             1 -> Toast.makeText(this, "- meget lignende Apple's swift, så nemt at hoppe mellem", LENGTH_LONG).show();
             2 -> Toast.makeText(this, "- jetbrains er selv igang med at lave \"Kotlin Multiplatform\" så man kan udvikle til android og ios", LENGTH_LONG).show();
             3 -> Toast.makeText(this, "- understøttet af mange IDE's så man kan arbejde i den man foretrækker", LENGTH_LONG).show();
+            4 -> Toast.makeText(this, "- meget klar og instinktiv syntaks, så nemt at skrive i:", LENGTH_LONG).show();
+            5 -> Toast.makeText(this, "- godt til JVM development: desktop, web and backend server application", LENGTH_LONG).show();
 
             else -> {
                 "test"
